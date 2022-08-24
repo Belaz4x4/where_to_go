@@ -15,10 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
-
-def start_page(reqest):
-    return HttpResponse('Здесь будет карта')
+from .views import start_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
